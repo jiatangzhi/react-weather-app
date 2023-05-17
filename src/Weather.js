@@ -17,16 +17,15 @@ export default function Weather() {
   return (
     <div className="Weather">
       <form>
-        <div className="row">
+        <div className="row mt-3">
           <div className="col-9">
             <input
               type="search"
               placeholder="Enter a city"
-              // autocomplete="off"
               className="form-control"
+              autoFocus="on"
             />
           </div>
-
           <div className="col-3">
             <input
               type="submit"
@@ -44,8 +43,14 @@ export default function Weather() {
       </ul>
       <div className="row">
         <div className="col-6">
-          <img src="pic.png" alt="Mostly cloudy" />
-          6°C
+          <div className="clearfix">
+            <img src="pic.png" alt="Mostly cloudy" className="float-left"/>
+            <div>
+              <div className="float-left">
+                <span className="temperature">6</span>
+                <span className="unit">°C</span>
+            </div>
+          </div>
         </div>
         <div className="col-6">
           <ul>
