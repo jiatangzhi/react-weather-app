@@ -1,5 +1,5 @@
 import React from "react";
-import axios from 'axios';
+// import axios from 'axios';
 import "./Weather.css";
 import "./App.css";
 
@@ -108,6 +108,20 @@ export default function Weather() {
           </div>
         </div>
       </div>
+      <footer>
+        This project was coded by{" "}
+        <a href="https://www.jxtangzhi.com/" rel="noreferrer" target="_blank">
+          Jia Xin Tang Zhi
+        </a>{" "}
+        and is{" "}
+        <a
+          href="https://github.com/jiatangzhi/weather-react"
+          rel="noreferrer"
+          target="_blank"
+        >
+          open-sourced
+        </a>
+      </footer>
     </div>
   );
 }
