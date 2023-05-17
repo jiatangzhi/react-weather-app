@@ -1,10 +1,10 @@
 import React from "react";
 // import axios from 'axios';
 import "./Weather.css";
-import "./App.css";
+// import "./App.css";
 
 export default function Weather() {
-  let weatherData = {
+  /*  let weatherData = {
     city: "London",
     temperature: "14",
     date: "Tuesday 10:00",
@@ -12,34 +12,55 @@ export default function Weather() {
     imgUrl: "cloud.png",
     humidity: "80",
     wind: "10",
-  };
+  }; */
 
   return (
     <div className="Weather">
-      {/* <div className="weatherApp"> */}
-      <button className="themeButton">Change Theme</button>
-
-      <form className="searchForm mb-3">
+      <form>
         <div className="row">
           <div className="col-9">
             <input
               type="search"
               placeholder="Enter a city"
-              autocomplete="off"
+              // autocomplete="off"
               className="form-control"
             />
           </div>
+
           <div className="col-3">
             <input
               type="submit"
-              className="btn btnSearch w-100"
               value="Search"
+              className="btn btn-primary w-100"
             />
           </div>
         </div>
       </form>
 
-      {/* <div className="weatherInfo"> */}
+      <h1>London</h1>
+      <ul>
+        <li>Wednesday 7:00</li>
+        <li>Mostly Cloudy</li>
+      </ul>
+      <div className="row">
+        <div className="col-6">
+          <img src="pic.png" alt="Mostly cloudy" />
+          6°C
+        </div>
+        <div className="col-6">
+          <ul>
+            <li>Precipitation: 15%</li>
+            <li>Humidity: 72%</li>
+            <li> Wind: 13km/h</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+{
+  /* <div className="weatherInfo"> 
       <div className="overview mb-3">
         <div className="row">
           <div className="col-5 text-capitalize">
@@ -68,7 +89,7 @@ export default function Weather() {
           </div>
         </div>
       </div>
-      {/* </div> */}
+      </div>
 
       <div className="containerFluid text-center weatherBoxes">
         <div className="row">
@@ -108,20 +129,5 @@ export default function Weather() {
           </div>
         </div>
       </div>
-      <footer>
-        This project was coded by{" "}
-        <a href="https://www.jxtangzhi.com/" rel="noreferrer" target="_blank">
-          Jia Xin Tang Zhi
-        </a>{" "}
-        and is{" "}
-        <a
-          href="https://github.com/jiatangzhi/weather-react"
-          rel="noreferrer"
-          target="_blank"
-        >
-          open-sourced
-        </a>
-      </footer>
-    </div>
-  );
+</div> */
 }
