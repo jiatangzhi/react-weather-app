@@ -1,7 +1,7 @@
 import React from "react";
-// import axios from 'axios';
+import axios from 'axios';
 import "./Weather.css";
-// import "./App.css";
+
 
 export default function Weather() {
   /*  let weatherData = {
@@ -44,95 +44,23 @@ export default function Weather() {
       <div className="row">
         <div className="col-6">
           <div className="clearfix">
-            <img src="pic.png" alt="Mostly cloudy" className="float-left"/>
+            <img src="pic.png" alt="Mostly cloudy" className="float-left" />
             <div>
               <div className="float-left">
                 <span className="temperature">6</span>
                 <span className="unit">°C</span>
+              </div>
             </div>
           </div>
-        </div>
-        <div className="col-6">
-          <ul>
-            <li>Precipitation: 15%</li>
-            <li>Humidity: 72%</li>
-            <li> Wind: 13km/h</li>
-          </ul>
+          <div className="col-6">
+            <ul>
+              <li>Precipitation: 15%</li>
+              <li>Humidity: 72%</li>
+              <li> Wind: 13km/h</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
   );
-}
-
-{
-  /* <div className="weatherInfo"> 
-      <div className="overview mb-3">
-        <div className="row">
-          <div className="col-5 text-capitalize">
-            <h1>{weatherData.city}</h1>
-            <ul>
-              <li>Last update: {weatherData.date}</li>
-              <li>{weatherData.description}</li>
-            </ul>
-          </div>
-
-          <div className="col-7 overviewDetails">
-            <div className="row">
-              <div className="overviewIcon col">
-                <img src={weatherData.imgUrl} alt={weatherData.description} />
-              </div>
-
-              <div className="weatherTemp col">
-                <span className="temperature">
-                  <strong>{weatherData.temperature}</strong>
-                </span>
-                <span className="units">
-                  <a href="/">°C</a> | <a href="/">°F</a>
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      </div>
-
-      <div className="containerFluid text-center weatherBoxes">
-        <div className="row">
-          <div className="col weatherBox mb-3">
-            <div className="boxIcon">
-              <i className="fa-solid fa-temperature-three-quarters"></i>
-            </div>
-            <h5>Feels like</h5>
-            12°
-          </div>
-
-          <div className="col weatherBox mb-3">
-            <div className="boxIcon">
-              <i className="fa-solid fa-droplet"></i>
-            </div>
-            <h5>Humidity</h5>
-            {weatherData.humidity}%
-          </div>
-        </div>
-
-        <div className="row">
-          <div className="col weatherBox mb-3">
-            <div className="boxIcon">
-              <i className="fa-solid fa-wind"></i>
-            </div>
-            <h5>Wind</h5>
-            {weatherData.wind} m/s
-          </div>
-          <div className="col weatherBox mb-3">
-            <div className="col">
-              <div className="boxIcon">
-                <i className="fa-solid fa-eye"></i>
-              </div>
-              <h5>Visibility</h5>
-              10km
-            </div>
-          </div>
-        </div>
-      </div>
-</div> */
 }
