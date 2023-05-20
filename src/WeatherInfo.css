@@ -1,0 +1,11 @@
+.WeatherInfo {
+  margin-top: 20px;
+  text-align: center;
+}
+.WeatherInfo .row-container {
+  margin: 17px auto 18px;
+  align-items: center;
+}
+.WeatherInfo span {
+  color: #f65281;
+}

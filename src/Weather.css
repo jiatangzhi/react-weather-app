@@ -3,8 +3,9 @@
   border: 1px solid #dadde1;
   padding: 16px;
   margin: 30px auto;
-  border-radius: 4px;
+  border-radius: 10px;
   color: rgb(135, 135, 135);
+  background-color: rgb(255, 244, 244);
 }
 .Weather h1 {
   font-size: 24px;
@@ -40,4 +41,13 @@
   position: relative;
   line-height: 1px;
   top: -34px;
+}
+
+@media (max-width: 575px) {
+  .Weather .button {
+    text-align: center;
+  }
+  .Weather .WeatherInfo {
+    text-align: center;
+  }
 }
